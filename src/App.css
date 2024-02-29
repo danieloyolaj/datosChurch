@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.active {
+  font-weight: bold;
+  color: rgb(62, 89, 151);
+  background-color: #ccc;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+body {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #525252;
+  padding: 7px 35px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #5c5c5c;
+  border: 1px solid #ccc;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  width: 80%;
+  margin: 20px auto 10px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  justify-content: flex-end;
+}
+
+li {
+  margin-left: 50px;
+  text-decoration: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+}
+
+/* LOGIN PAGE */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 50px auto;
+}
+
+.title-login {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.login-form {
+  margin-bottom: 50px;
+}
+
+.label-login {
+  font-size: larger;
+}
+
+input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+
+input[type=text]:focus {
+  background-color: rgb(188, 188, 188);
+}
+
+.btn-login {
+  margin-top: 25px;
+  font-size: larger;
+}
+
+
+/* HOME PAGE */
+.home-container {
+  width: 80%;
+  margin: 25px auto;
+}
+
+.home-title {
+  margin-bottom: 20px;
+}
+
+.btn-span {
+  margin-top: 50px;
+
+}
+.btn-home{
+  background-color: #525252;
+  padding: 5px 25px;
+  border-radius: 4px;
+}
+
+.btn-home:hover {
+  background-color: #5c5c5c;
+  border: 1px solid #ccc;
+}
+
+/*------------------------------------------------*/
+
+/* MEETINGS PAGE */
+
+.meetings-container {
+  width: 80%;
+  margin: 0px auto;
+}
+

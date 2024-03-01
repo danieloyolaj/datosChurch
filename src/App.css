@@ -161,3 +161,24 @@ input[type=text]:focus {
   margin: 0px auto;
 }
 
+.meetingForm-container {
+  display: flex;
+}
+
+.meetingForm-header {
+  display: block;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.meetingForm-input {
+  width: 40%;
+  font-size: large;
+  text-indent: 10px;
+}

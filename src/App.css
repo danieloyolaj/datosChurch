@@ -28,6 +28,10 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  margin-top: 20px;
+}
+
 button {
   background-color: #525252;
   padding: 7px 35px;
@@ -162,7 +166,7 @@ input[type=text]:focus {
 }
 
 .meetingForm-container {
-  display: flex;
+  display: block;
 }
 
 .meetingForm-header {
@@ -182,3 +186,75 @@ input[type=text]:focus {
   font-size: large;
   text-indent: 10px;
 }
+
+.btn-appear {
+  width: 40px;
+  height: 40px;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-meetings {
+  display: flex;
+}
+
+.btn-meetings-card {
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+/**********************************/
+
+.box {
+  background-color: #ccc;
+  color: black;
+  /* width: 50%; */
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+}
+
+.box > p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.box > ul > li {
+  /* background-color: #525252; */
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.delete {
+  background-color: #780000;
+  font-size: x-small;
+  padding: 5px;
+  margin-left: 50px;
+}
+
+.completed {
+  background-color: #606c38;
+  color: white;
+}
+
+
+
+.add {
+  background-color: green;
+  cursor: pointer;
+}
+
+.sub {
+  background-color: red;
+  cursor: pointer;
+}
+
+/**********************************/

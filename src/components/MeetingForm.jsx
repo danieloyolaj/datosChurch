@@ -1,48 +1,55 @@
 
 const MeetingForm = () => {
 
-    const handleSubmit = (e) => {
-        e.precentDefault()
-    }
+  
 
   return (
+    
     <div className="meetingForm-container">
-        <form onSubmit={handleSubmit}>
-            <div className="meetingForm-header">
+        <div className="meetingForm-subContainer">
                 
             <p>
                     <strong>Propósito de la reunión Sacramental:</strong><br /><br />
                     Recordar a Jesucristo al tomar la Santa Cena. En esta ordenanza, los miembros de la Iglesia renuevan el convenio de tomar sobre sí el nombre del Salvador, de recordarlo siempre y de guardar Sus mandamientos. Otros propósitos incluyen el adorar, el edificar la fe y el testmonio, y el tratar los asuntos del barrio.
-                </p>
+            </p>
+        </div>
+        
+        <form >
+            
+                <div className="meetingForm-header">
+                    <p className="form-label">Fecha</p>
+                    <input className="meetingForm-input" type="date" name="date" id="fecha" />
+                    <p className="form-label">Asistencia</p>
+                    <input className="meetingForm-input" type="number" name="asistencia"/>
+                </div>
+        
+                <h2>Saludo y bienvenida</h2> 
 
-                <p className="form-label">Fecha</p>
-                <input className="meetingForm-input" type="date" name="date" id="fecha" />
-                <p className="form-label">Asistencia</p>
-                <input className="meetingForm-input" type="number" name="asistencia"/>
+                <button className="btn-appear">+</button>
+            
 
                 
-            </div>
-            <div className="meetingForm-programa">
-                <p className="form-label">Saludo y bienvenida</p>
-                <input className="meetingForm-input" type="text" name="saludo" />
-                <p className="form-label">Reconocimiento</p>
-                <input className="meetingForm-input" type="text" name="reconocimiento" />
-                <p className="form-label">Preside</p>
-                <input className="meetingForm-input" type="text" name="preside" />
-                <p className="form-label">Dirige</p>
-                <input className="meetingForm-input" type="text" name="dirige" />
-                <p className="form-label">Anuncios</p>
-                <input className="meetingForm-input" type="text" name="anuncios" />
-                <p className="form-label">Director@ de himno</p>
-                <input className="meetingForm-input" type="text" name="directorHimno" />
-                <p className="form-label">Pianista</p>
-                <input className="meetingForm-input" type="text" name="pianista" />
-                <p className="form-label">Primer himno</p>
-                <input className="meetingForm-input" type="text" name="primerHimno" />
-                <p className="form-label">Primra oración</p>
-                <input className="meetingForm-input" type="text" name="primeraOracion" />
-            </div>
-
+                <div className="meetingForm-programa">
+                    <input className="meetingForm-input" type="text" name="saludo" />
+                    <p className="form-label">Reconocimiento</p>
+                    <input className="meetingForm-input" type="text" name="reconocimiento" />
+                    <p className="form-label">Preside</p>
+                    <input className="meetingForm-input" type="text" name="preside" />
+                    <p className="form-label">Dirige</p>
+                    <input className="meetingForm-input" type="text" name="dirige" />
+                    <p className="form-label">Anuncios</p>
+                    <input className="meetingForm-input" type="text" name="anuncios" />
+                    <p className="form-label">Director@ de himno</p>
+                    <input className="meetingForm-input" type="text" name="directorHimno" />
+                    <p className="form-label">Pianista</p>
+                    <input className="meetingForm-input" type="text" name="pianista" />
+                    <p className="form-label">Primer himno</p>
+                    <input className="meetingForm-input" type="text" name="primerHimno" />
+                    <p className="form-label">Primra oración</p>
+                    <input className="meetingForm-input" type="text" name="primeraOracion" />
+                </div>
+            
+        
             <div className="asuntos">
                 <h2>Asuntos de Rama</h2>
                 <p>Crear asunto</p>
@@ -85,8 +92,11 @@ const MeetingForm = () => {
                 <p className="form-label">Ultima oración</p>
                 <input className="meetingForm-input" type="text" name="oracionFinal" />
             </div>
+        
+            
         </form>
     </div>
+    
   )
 }
 
